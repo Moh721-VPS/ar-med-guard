@@ -35,3 +35,5 @@ trainer.train()
 
 print("TEST SET RESULTS (AraBERT)")
 print(trainer.evaluate(test))
+trainer.save_model("outputs/armed_model")
+tok.save_pretrained("outputs/armed_model")
